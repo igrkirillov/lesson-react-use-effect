@@ -81,7 +81,7 @@ function List(props: ListProps) {
          </div>)
       : (
           <div className="list">
-            <ul>{state.items.map(item => (<li className="list-item" onClick={onLiClick} data-id={item.id}>{item.name}</li>))}</ul>
+            <ul>{state.items.map(item => (<li className="list-item" onClick={onLiClick} data-id={item.id} key={item.id}>{item.name}</li>))}</ul>
           </div>)
 }
 
