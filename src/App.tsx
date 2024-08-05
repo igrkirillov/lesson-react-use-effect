@@ -125,7 +125,7 @@ function Details(props: DetailsProps) {
         ? (
               <div className="container">
                   <div className="photo">
-                      <img className="photo" src={state.item?.avatar} alt="photo"/>
+                      <img className="photo" src={`${state.item?.avatar}?${performance.now()}`} alt="photo"/>
                   </div>
                   <div className="name">
                       <span className="title">Name: </span>
